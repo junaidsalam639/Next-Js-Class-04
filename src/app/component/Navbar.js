@@ -1,8 +1,13 @@
 'use client'
-import React from 'react'
+import { useRouter } from 'next/navigation'
+import React, { useContext } from 'react'
+import { AuthContext } from '../context/AuthContext'
 
 const Navbar = () => {
-  return (
+    const { user } = useContext(AuthContext)
+    const router = useRouter()
+    
+    return (
     <div>
       <header class="text-gray-600 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">

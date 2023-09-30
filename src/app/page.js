@@ -1,11 +1,13 @@
 import Navbar from './component/Navbar'
-import Practice from './component/Practice'
 
 export default function Home() {
   return (
 <>
 <Navbar />
-<Practice />
 </>
   )
 }
+
+
+
+// https://www.figma.com/file/hx16NK5viptTvZnAbgTMk4/Project---Hekto?type=design&node-id=1-38&mode=design&t=smTVEkP1h6NgdkaX-0

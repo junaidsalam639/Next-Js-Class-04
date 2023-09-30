@@ -1,9 +1,14 @@
+import HomePage from './component/Home_Page/Home'
+import Nav from './component/Nav'
 import Navbar from './component/Navbar'
 
 export default function Home() {
   return (
 <>
+<Nav />
+<HomePage />
 <Navbar />
+
 </>
   )
 }

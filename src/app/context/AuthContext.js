@@ -5,7 +5,7 @@ import {
     onAuthStateChanged,
     getAuth,
 } from 'firebase/auth';
-
+import { LoadingOutlined } from '@ant-design/icons'
 
 const auth = getAuth(firebase_app);
 
@@ -34,7 +34,7 @@ export const AuthContextProvider = ({
 
     return (
         <AuthContext.Provider value={{ user }}>
-            {loading ? <div className='text-center text-3xl font-bold'>Loading...</div> : children}
+            {loading ? <div className='text-center text-3xl font-bold'>Loading...<LoadingOutlined /></div> : children}
         </AuthContext.Provider>
     );
 };

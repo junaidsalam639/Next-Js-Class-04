@@ -1,3 +1,4 @@
+import FeatureProduct from './component/Home_Page/FeatureProduct'
 import HomePage from './component/Home_Page/Home'
 import Nav from './component/Nav'
 import Navbar from './component/Navbar'
@@ -7,8 +8,11 @@ export default function Home() {
 <>
 <Nav />
 <HomePage />
-<Navbar />
+<FeatureProduct />
 
+
+
+{/* <Navbar /> */}
 </>
   )
 }

@@ -11,6 +11,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "antd": "^5.9.4",
+    "bootstrap": "^5.3.2",
     "firebase": "^10.4.0",
     "next": "latest",
     "react": "latest",

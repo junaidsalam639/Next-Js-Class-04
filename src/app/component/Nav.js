@@ -13,16 +13,16 @@ const Nav = () => {
                         <span class="ml-3 text-2xl font-medium">Hekto</span>
                     </a>
                     <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-                        <a class="mr-5 hover:text-gray-900">Home</a>
-                        <a class="mr-5 hover:text-gray-900">Pages</a>
-                        <a class="mr-5 hover:text-gray-900">Products</a>
-                        <a class="mr-5 hover:text-gray-900">Blogs</a>
-                        <a class="mr-5 hover:text-gray-900">Shops</a>
-                        <a class="mr-5 hover:text-gray-900">Contact</a>
+                        <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Home</a>
+                        <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Pages</a>
+                        <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Products</a>
+                        <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Blogs</a>
+                        <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Shops</a>
+                        <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Contact</a>
                     </nav>
                     <button class="inline-flex items-center">
-                        <div className="w-full bg-white border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base  rounded-md outline-none text-gray-700 leading-8 transition-colors duration-200 ease-in-out">
-                            <input type="email" id="email" name="email" className='border-none outline-none px-2' /><SearchOutlined className='text-3xl text-white text-center pl-2 bg-pink-600' />
+                        <div className="border-2 border-indigo-100 rounded-md">
+                            <input type="email" id="email" name="email" placeholder='Search...' className='border-none outline-none px-2' /><SearchOutlined className='text-2xl text-white text-center p-1 px-2 bg-pink-600' />
                         </div>
                     </button>
                 </div>

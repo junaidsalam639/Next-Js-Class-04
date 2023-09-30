@@ -1,47 +1,33 @@
 'use client'
-import React from 'react'
+import { getProduct } from "@/app/Api_Data_Fecth/getProduct";
+import { useState } from "react";
 
 const FeatureProduct = () => {
+
+
+    const [cards, setCards] = useState([]);
+    async function getData(){
+        const wait = await getProduct();
+        const cardElements = wait.products.map((user, index) => (
+            <div key={index} className="card w-80 h-full shadow-md border-2 border-gray-200 p-5 rounded-md mt-4 mb-4">
+                <img src={user.thumbnail} alt={user.name} className='w-80 h-56 rounded-md shadow-md' />
+                <div className="card-info pt-4">
+                    <h2><b>Category : </b> {user.category}</h2>
+                    <h2><b>Price : </b> {user.price}</h2>
+                    <h2><b>Title : </b> {user.title}</h2>
+                    <h2><b>Description : </b> {user.description}</h2>
+                </div>
+            </div>
+        ));
+        setCards(cardElements);
+    }
+    getData();
+
   return (
     <div>
-      <div className="container mx-auto">
-        <h1 className='text-4xl font-bold text-center'>Featured Products</h1>
-        <div className="card-container grid lg:grid-cols-4 gap-12">
-        <div className="card w-72 shadow-md border-2 border-gray-200 p-5 rounded-md mt-4 mb-4">
-                <img src='https://ak1.ostkcdn.com/images/products/is/images/direct/1d3770cad1c35c3c792599cbaad2a1bbf640539a/Modern-3-Seater-Sofa-With-Wood-Legs-for-Living-Room-and-Bedroom.jpg' className='w-80 h-56 rounded-md shadow-md' />
-                <div className="card-info pt-4 text-center">
-                    <h2><b>Cantelever Chair</b> </h2>
-                    <h2><b>Code : Y523201</b> </h2>
-                    <h2><b>$42.00</b> </h2>
-                </div>
+         <div className="card-container flex justify-around items-center flex-wrap w-full">
+                {cards}
             </div>
-        <div className="card w-72 shadow-md border-2 border-gray-200 p-5 rounded-md mt-  mb-4">
-                <img src='https://ak1.ostkcdn.com/images/products/is/images/direct/1d3770cad1c35c3c792599cbaad2a1bbf640539a/Modern-3-Seater-Sofa-With-Wood-Legs-for-Living-Room-and-Bedroom.jpg' className='w-80 h-56 rounded-md shadow-md' />
-                <div className="card-info pt-4 text-center">
-                    <h2><b>Cantelever Chair </b> </h2>
-                    <h2><b>Code : Y523201 </b> </h2>
-                    <h2><b>$42.00</b> </h2>
-                </div>
-            </div>
-        <div className="card w-72 shadow-md border-2 border-gray-200 p-5 rounded-md mt-4 mb-4">
-                <img src='https://ak1.ostkcdn.com/images/products/is/images/direct/1d3770cad1c35c3c792599cbaad2a1bbf640539a/Modern-3-Seater-Sofa-With-Wood-Legs-for-Living-Room-and-Bedroom.jpg' className='w-80 h-56 rounded-md shadow-md' />
-                <div className="card-info pt-4 text-center">
-                    <h2><b>Cantelever Chair</b> </h2>
-                    <h2><b>Code : Y523201</b> </h2>
-                    <h2><b>$42.00</b> </h2>
-                </div>
-            </div>
-        <div className="card w-72 shadow-md border-2 border-gray-200 p-5 rounded-md mt-4 mb-4">
-                <img src='https://ak1.ostkcdn.com/images/products/is/images/direct/1d3770cad1c35c3c792599cbaad2a1bbf640539a/Modern-3-Seater-Sofa-With-Wood-Legs-for-Living-Room-and-Bedroom.jpg' className='w-80 h-56 rounded-md shadow-md' />
-                <div className="card-info pt-4 text-center">
-                    <h2><b>Cantelever Chair </b> </h2>
-                    <h2><b>Code : Y523201 </b> </h2>
-                    <h2><b>$42.00</b> </h2>
-                </div>
-            </div>
-            
-            </div>
-        </div>
       </div>
   )
 }

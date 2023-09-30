@@ -1,8 +1,8 @@
-export const getProduct = async () => {
-    const res = await fetch('https://dummyjson.com/products')
-    if(!res.ok){
-      console.log('Nhi Chala');
-    }
-    return res.json();
-}
-
+export const getProduct_ = [
+  {
+    id : 1,
+    title : 'Samsung Galaxy Book',
+    image : 'https://i.dummyjson.com/data/products/7/thumbnail.jpg',
+    price : 1499,
+  },
+]

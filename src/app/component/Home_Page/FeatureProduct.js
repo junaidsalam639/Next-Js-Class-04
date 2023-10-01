@@ -1,13 +1,11 @@
 'use client'
-import React from 'react'
+import React , { useState } from 'react'
 import productApi from '@/app/Api_Data_Fecth/getProduct'
 
 const FeatureProduct = () => {
     const [cards, setCards] = useState([]);
-    const submit = async (e) => {
-        e.preventDefault();
-        let input = document.getElementById('input').value;
-        const data = await productApi(input);
+    const submit = async () => {
+        const data = await productApi();
         const cardElements = data.products.map((user, index) => (
             <div key={index} className="card w-80 h-full shadow-md border-2 border-gray-200 p-5 rounded-md mt-4 mb-4">
                 <img src={user.thumbnail} alt={user.name} className='w-80 h-56 rounded-md shadow-md' />

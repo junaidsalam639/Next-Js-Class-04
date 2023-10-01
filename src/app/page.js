@@ -10,8 +10,8 @@ export default function Home() {
 <NavbarOne />
 <Nav />
 <HomePage />
-<Footer / >
-
+<Footer />
+<FeatureProduct />
 
 {/* <Navbar /> */}
 </>

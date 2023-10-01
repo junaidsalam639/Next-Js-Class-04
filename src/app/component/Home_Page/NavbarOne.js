@@ -20,7 +20,7 @@ const NavbarOne = () => {
     return (
 <ProtectedContainer>
     <div>
-      <header className="text-gray-600 body-font bg-indigo-950">
+      <header className="text-gray-600 body-font bg-indigo-950 fixed w-full">
   <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center py-2">
     <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       <span className="ml-3 font-medium text-white"><MailOutlined className='text-2xl text-white text-center pl-2 pr-3' />{user ? user.email : 'abc@gmail.com'}</span>

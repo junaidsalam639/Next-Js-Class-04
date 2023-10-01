@@ -1,9 +1,10 @@
+import Footer_Footer from './component/Footer'
 import FeatureProduct from './component/Home_Page/FeatureProduct'
 import HomePage from './component/Home_Page/Home'
 import NavbarOne from './component/Home_Page/NavbarOne'
 import Nav from './component/Nav'
 import Navbar from './component/Navbar'
-import Footer from './component/Footer'
+
 export default function Home() {
   return (
 <>
@@ -11,7 +12,7 @@ export default function Home() {
 <Nav />
 <HomePage />
 <FeatureProduct />
-<Footer />
+<Footer_Footer />
 
 {/* <Navbar /> */}
 </>

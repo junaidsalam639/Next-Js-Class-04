@@ -13,7 +13,8 @@ const NavbarOne = () => {
       if (!user) {
           router.push('/login_Singup_Page/login')
       } else {
-        signout()
+        signout();
+        router.push('/')
       }
   }
 

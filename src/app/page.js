@@ -1,5 +1,5 @@
+import Card_Card from './component/Card'
 import Footer_Footer from './component/Footer'
-import FeatureProduct from './component/Home_Page/FeatureProduct'
 import HomePage from './component/Home_Page/Home'
 import NavbarOne from './component/Home_Page/NavbarOne'
 import Nav from './component/Nav'
@@ -11,7 +11,10 @@ export default function Home() {
 <NavbarOne />
 <Nav />
 <HomePage />
-<FeatureProduct />
+<div className='mt-14'>
+  <h1 className='font-bold text-3xl text-center text-indigo-800 mb-4'>Featured Product</h1>
+<Card_Card />
+</div>
 <Footer_Footer />
 
 {/* <Navbar /> */}

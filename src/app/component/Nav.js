@@ -12,7 +12,7 @@ const Nav = () => {
                         <span class="ml-3 text-2xl font-medium">Hekto</span>
                     </a>
                     <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-                        <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Home</a>
+                        <Link href={'/'} class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium" >Home</Link>
                         <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Pages</a>
                         <Link href={'/All_Page/GridPage'} class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium" >Products</Link>
                         <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Blogs</a>

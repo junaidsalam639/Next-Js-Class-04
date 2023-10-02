@@ -17,7 +17,7 @@ const Nav = () => {
                         <Link href={'/All_Page/GridPage'} class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium" >Products</Link>
                         <Link href={'/All_Page/Blog'} class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium" >Blogs</Link>
                         <Link href={'/All_Page/ShopList'} class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium" >Shops</Link>
-                        <a class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium">Contact</a>
+                        <Link href={'/All_Page/Contact'} class="mr-5 hover:text-gray-900 text-gray-600 cursor-pointer px-1 font-medium" >Contact</Link>
                     </nav>
                     <button class="inline-flex items-center">
                         <div className="border-2 border-indigo-100 rounded-md">

@@ -19,12 +19,12 @@ const Fronted = () => {
                         <p>About 9,620 results (0.62 seconds)</p>
                     </div>
                     <div className='flex items-center flex-wrap mt-3 mb-3'>
-                        <label htmlFor="per" className='px-2'>Per Page: </label>
-                        <input type="text" className='border-2 border-indigo-300 outline-none pl-2 w-20' />
-                        <label htmlFor="per" className='px-2'>Sort By: </label>
-                        <input type="text" className='border-2 border-indigo-300 outline-none pl-2 w-24' />
-                        <label htmlFor="per" className='px-2'>View: </label>
-                        <input type="text" className='border-2 border-indigo-300 outline-none pl-2 w-28' />
+                        <label htmlFor="per" className='px-2 text-md font-bold text-indigo-800'>Per Page: </label>
+                        <input type="text" className='border-2 border-indigo-800 rounded-sm outline-none pl-2 w-20' placeholder='Page' />
+                        <label htmlFor="per" className='px-2 text-md font-bold text-indigo-800'>Sort By: </label>
+                        <input type="text" className='border-2 border-indigo-800 rounded-sm outline-none pl-2 w-24' placeholder='Sort' />
+                        <label htmlFor="per" className='px-2 text-md font-bold text-indigo-800'>View: </label>
+                        <input type="text" className='border-2 border-indigo-800 rounded-sm outline-none pl-2 w-28' placeholder='View' />
                     </div>
                 </div>
             </div>

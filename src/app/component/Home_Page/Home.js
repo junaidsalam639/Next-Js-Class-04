@@ -3,7 +3,7 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div className='bg-indigo-100'>
+    <div className='bg-indigo-50'>
       <div className="container mx-auto">
         <div className="row grid lg:grid-cols-2 gap-20 md:grid-cols-2 justify-center items-center">
             <div className='container mx-auto'>

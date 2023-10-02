@@ -13,7 +13,7 @@ const HomePage = () => {
                 <button className='bg-pink-600 text-white px-4 py-2 border-none mt-3'>Shop Now</button>
             </div>
             <div className='flex justify-center items-center w-full'>
-                <img src="https://cdn.arhaus.com/product/StandardV2/1003933SFPL_DE230224.jpg?preset=ProductGrande" alt="" className='rounded p-20' />
+                <img src="https://media.istockphoto.com/id/1044827658/photo/an-elegant-navy-blue-sofa-in-the-middle-of-a-bright-living-room-interior-with-gold-metal-side.jpg?s=170667a&w=0&k=20&c=Ct3Yl9JdLVEh2D-RKoblUvcZBTsl4ek1ynPCbdrw-j4=" alt="" className='rounded p-20' />
             </div>
         </div>
       </div>

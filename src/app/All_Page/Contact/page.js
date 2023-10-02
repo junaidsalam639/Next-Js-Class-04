@@ -1,5 +1,7 @@
 'use client'
 import Contact from '@/app/component/Contact_Page/Contact'
+import Contact_Input from '@/app/component/Contact_Page/Contact_Input'
+import Footer_Footer from '@/app/component/Footer'
 import NavbarOne from '@/app/component/Home_Page/NavbarOne'
 import Nav from '@/app/component/Nav'
 import React from 'react'
@@ -19,6 +21,7 @@ const page = () => {
                 </div>
             </div>
             <Contact />
+            <Footer_Footer />
     </>
   )
 }

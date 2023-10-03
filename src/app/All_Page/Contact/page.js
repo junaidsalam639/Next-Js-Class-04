@@ -21,6 +21,7 @@ const page = () => {
                 </div>
             </div>
             <Contact />
+            <Contact_Input />
             <Footer_Footer />
     </>
   )

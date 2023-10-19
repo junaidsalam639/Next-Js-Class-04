@@ -5,6 +5,13 @@ import NavbarOne from './component/Home_Page/NavbarOne'
 import Nav from './component/Nav'
 import Navbar from './component/Navbar'
 
+export async function generateMetadata(){
+  return{
+    title : 'Home_Page',
+    description : 'Home_Page',
+  }
+}
+
 export default function Home() {
   return (
 <>
@@ -17,7 +24,6 @@ export default function Home() {
 </div>
 <Footer_Footer />
 
-{/* <Navbar /> */}
 </>
   )
 }

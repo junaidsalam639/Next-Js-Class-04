@@ -2,7 +2,13 @@ import Blog_show from '@/app/component/Blog_Page/Blog_show'
 import Footer_Footer from '@/app/component/Footer'
 import NavbarOne from '@/app/component/Home_Page/NavbarOne'
 import Nav from '@/app/component/Nav'
-import React from 'react'
+
+export async function generateMetadata(){
+  return{
+    title : 'Blog_Page',
+    description : 'Blog_Page',
+  }
+}
 
 const page = () => {
   return (

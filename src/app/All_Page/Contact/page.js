@@ -1,10 +1,15 @@
-'use client'
 import ContactInfo from '@/app/component/Contact_Page/ContactInfo'
 import Contact_Input from '@/app/component/Contact_Page/Contact_Input'
 import Footer_Footer from '@/app/component/Footer'
 import NavbarOne from '@/app/component/Home_Page/NavbarOne'
 import Nav from '@/app/component/Nav'
-import React from 'react'
+
+export async function generateMetadata(){
+  return{
+    title : 'Contact_Page',
+    description : 'Contact_Page',
+  }
+}
 
 const page = () => {
   return (
